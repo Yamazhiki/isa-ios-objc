@@ -4,10 +4,24 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>-[AppEnvironmentTests testLiveStream].xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false />
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>-[AppEnvironmentTests testUser].xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false />
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Api.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Crocodile.xcscheme</key>
 		<dict>
@@ -17,26 +31,19 @@
 		<key>CrocodileTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<key>CrocodileUITests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>11</integer>
 		</dict>
-		<key>-[AppEnvironmentTests testUser].xcscheme</key>
+		<key>-[LoginViewModelSpec].xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false />
 			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>-[AppEnvironmentTests testLiveStream].xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>12</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

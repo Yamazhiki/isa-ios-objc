@@ -41,7 +41,7 @@
 
 - (RACSignal <User *> *)getUser:(NSInteger)uid {
 
-    return [[_manager GET:[NSString stringWithFormat:@"user/%d", uid] parameters:nil] map:^id(id value) {
+    return [[_manager GET:[NSString stringWithFormat:@"user/%ld", uid] parameters:nil] map:^id(id value) {
         return [[User alloc] initWithDictionary:value];
     }];
 

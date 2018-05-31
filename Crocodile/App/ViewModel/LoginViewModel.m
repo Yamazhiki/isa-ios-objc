@@ -9,8 +9,7 @@
 #import "UserRepositoryImp.h"
 #import "HttpClient.h"
 
-@implementation LoginViewModel
-{
+@implementation LoginViewModel {
 }
 
 - (instancetype)initWithClient:(HttpClient *)client {
@@ -23,6 +22,7 @@
             return @([imp invalidateUsername:value.first] && [imp invalidatePassword:value.second]);
         }];
 
+    _canLogin = correctInput;
     _submitCmd = [[RACCommand alloc] initWithEnabled:correctInput signalBlock:^RACSignal *(id input) {
         return [repository getUser:1];
     }];

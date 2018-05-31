@@ -35,7 +35,6 @@
 }
 
 - (void)testLiveStream {
-  id<LiveStreamPusherType> oriPusher = AppEnvironment.shared.current.liveSteam;
   [AppEnvironment.shared switchLiveStream:AppLiveStreamSDKTypeAli];
   NSAssert([AppEnvironment.shared.current.liveSteam isKindOfClass:[AliPusher class]], @"替换SDK失败");
 }
