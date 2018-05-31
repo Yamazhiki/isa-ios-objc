@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HttpClient.h"
+#import "ApiClient.h"
 
 @class RACSubject;
 @protocol RACSubscriber;

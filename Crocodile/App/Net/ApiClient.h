@@ -5,22 +5,21 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
+#import "ApiClientType.h"
 
 @class RACSignal;
 @protocol ClientConfigType;
 
-@protocol HttpInjector <NSObject>
+@protocol HttpInjector<NSObject>
 @optional
 - (void)pre;
 
 - (void)finishResponse:(NSHTTPURLResponse *)response responseObject:(id)responseObject;
 @end
 
+@interface ApiClient: NSObject<ApiClientType>
 
-@interface HttpClient : AFHTTPSessionManager
-- (instancetype)initWithConfig:(id <ClientConfigType>)config;
+- (instancetype)initWithConfig:(id<ClientConfigType>)config;
 
-- (void)addInjector:(id <HttpInjector>)injector;
-
-- (RACSignal *)GET:(NSString *)url parameters:(id)parameters;
+- (void)addInjector:(id<HttpInjector>)injector;
 @end

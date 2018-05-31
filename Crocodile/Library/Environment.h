@@ -5,16 +5,17 @@
 
 #import <Foundation/Foundation.h>
 
-@class HttpClient;
+@class ApiClient;
 @class User;
 @protocol LiveStreamPusherType;
 @protocol LiveStreamBeautyType;
 @protocol UserType;
+@protocol ApiClientType;
 
-@interface Environment : NSObject
+@interface Environment: NSObject
 
-@property(readonly) HttpClient *api;
 @property(readonly) id<UserType> user;
+@property(readonly) id<ApiClientType> api;
 @property(readonly) id<LiveStreamPusherType> liveSteam;
 @property(readonly) id<LiveStreamBeautyType> beauty;
 
@@ -28,7 +29,7 @@
  * @return Environment
  */
 - (instancetype)initWithUser:(id<UserType>)user
-                         api:(HttpClient *)api
+                         api:(id<ApiClientType>)api
                   liveStream:(id<LiveStreamPusherType>)liveStream
                       beauty:(id<LiveStreamBeautyType>)beauty;
 @end

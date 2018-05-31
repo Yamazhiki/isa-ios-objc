@@ -5,9 +5,9 @@
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "LoginViewController.h"
 #import "LoginViewModel.h"
-#import "UserRepositoryImp.h"
 #import "AppEnvironment.h"
 #import "Environment.h"
+#import "AccountValidatorImp.h"
 
 @implementation LoginViewController {
     LoginViewModel *_viewModel;
@@ -21,7 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    _viewModel = [[LoginViewModel alloc] initWithClient:[AppEnvironment shared].current.api];
+    _viewModel =
+        [[LoginViewModel alloc] initWithClient:[AppEnvironment shared].current.api validator:[AccountValidatorImp new]];
     RAC(_viewModel, username) = _usernameOutlet.rac_textSignal;
     RAC(_viewModel, password) = _passwordOutlet.rac_textSignal;
     _submitOutlet.rac_command = _viewModel.submitCmd;

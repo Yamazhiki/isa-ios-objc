@@ -13,6 +13,7 @@
 
     __weak IBOutlet UILabel *statusOutlet;
     __weak IBOutlet UIButton *logoutOutlet;
+    __weak IBOutlet UIButton *switchOutlet;
 }
 
 - (void)viewDidLoad {
@@ -31,6 +32,11 @@
             self->statusOutlet.text = @"没有登录";
         }
     }];
+
+    [[switchOutlet rac_signalForControlEvents:UIControlEventTouchUpInside]
+        subscribeNext:^(__kindof UIControl *x) {
+            [[AppEnvironment shared] switchMode:AppModeSimulate];
+        }];
 
     [[logoutOutlet rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl *x) {
         [[AppEnvironment shared] updateUser:nil];

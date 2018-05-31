@@ -4,27 +4,29 @@
 //
 
 #import <PDFKit/PDFKit.h>
+#import <ReactiveObjC/RACCommand.h>
+#import <ReactiveObjC/RACTuple.h>
+#import <ReactiveObjC/NSObject+RACPropertySubscribing.h>
+#import <ReactiveObjC/RACSignal.h>
+#import <ReactiveObjC/RACSignal+Operations.h>
 #import "LoginViewModel.h"
-#import "AccountValidatorImp.h"
-#import "UserRepositoryImp.h"
-#import "HttpClient.h"
+#import "ApiClient.h"
+#import "AccountValidatorType.h"
 
 @implementation LoginViewModel {
 }
 
-- (instancetype)initWithClient:(HttpClient *)client {
+- (instancetype)initWithClient:(id<ApiClientType>)client validator:(id<AccountValidatorType>)validator {
     self = [super init];
-    AccountValidatorImp *imp = [[AccountValidatorImp alloc] init];
-    id<UserRepositoryType> repository = [[UserRepositoryImp alloc] initWithManager:client];
     RACSignal *correctInput;
     correctInput = [[RACObserve(self, username) combineLatestWith:RACObserve(self, password)]
         map:^id(RACTwoTuple *value) {
-            return @([imp invalidateUsername:value.first] && [imp invalidatePassword:value.second]);
+            return @([validator invalidateUsername:value.first] && [validator invalidatePassword:value.second]);
         }];
 
     _canLogin = correctInput;
     _submitCmd = [[RACCommand alloc] initWithEnabled:correctInput signalBlock:^RACSignal *(id input) {
-        return [repository getUser:1];
+        return [client userById:1];
     }];
     return self;
 }

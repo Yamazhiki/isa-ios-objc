@@ -6,10 +6,11 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Environment.h"
 #import "User.h"
-#import "HttpClient.h"
+#import "ApiClient.h"
 #import "LiveStreamPusherType.h"
 #import "LiveStreamBeautyType.h"
 #import "UserType.h"
+#import "ApiClientType.h"
 
 @implementation Environment {
 }
@@ -23,7 +24,7 @@
 }
 
 - (instancetype)initWithUser:(id<UserType>)user
-                         api:(HttpClient *)api
+                         api:(id<ApiClientType>)api
                   liveStream:(id<LiveStreamPusherType>)liveStream
                       beauty:(id<LiveStreamBeautyType>)beauty {
   self = [super init];

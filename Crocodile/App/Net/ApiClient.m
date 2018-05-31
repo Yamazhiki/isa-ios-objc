@@ -6,15 +6,18 @@
 #import <ReactiveObjC/RACDisposable.h>
 #import <ReactiveObjC/RACSubscriber.h>
 #import <ReactiveObjC/RACSignal+Operations.h>
-#import "HttpClient.h"
+#import "ApiClient.h"
 #import "ClientConfigType.h"
+#import "User.h"
 
-@implementation HttpClient {
+@implementation ApiClient {
     NSMutableArray <id<HttpInjector>> *_injectors;
+    AFHTTPSessionManager *_manager;
 }
 
 - (instancetype)initWithConfig:(id<ClientConfigType>)config {
-    self = [super initWithBaseURL:config.apiBaseURL];
+    self = [super init];
+    _manager = [[AFHTTPSessionManager alloc] initWithBaseURL:config.apiBaseURL];
     _injectors = [NSMutableArray array];
     return self;
 }
@@ -27,12 +30,12 @@
 
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         NSURLSessionDataTask *task =
-            [self GET:url parameters:parameters progress:nil success:^(NSURLSessionDataTask *task,
-                                                                       id responseObject) {
+            [_manager GET:url parameters:parameters progress:nil success:^(NSURLSessionDataTask *task,
+                                                                           id responseObject) {
                 [self endInjector:(NSHTTPURLResponse *) task.response responseObject:responseObject];
                 [subscriber sendNext:responseObject];
                 [subscriber sendCompleted];
-            } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            }     failure:^(NSURLSessionDataTask *task, NSError *error) {
                 [self endInjector:(NSHTTPURLResponse *) task.response responseObject:nil];
                 [subscriber sendError:nil];
             }];
@@ -54,6 +57,24 @@
         if ([item respondsToSelector:@selector(finishResponse: responseObject:)])
             [item finishResponse:response responseObject:responseObject];
     }
+}
+
+
+#pragma mark ----- API -----
+- (RACSignal *)users {
+    return [[self GET:@"users" parameters:nil]
+        map:^id(id value) {
+            NSMutableArray *array = [NSMutableArray array];
+            for (NSDictionary *item in value) {
+                [array addObject:[[User alloc] initWithDictionary:item]];
+            }
+            return array;
+        }];
+}
+- (RACSignal *)userById:(NSInteger)uid {
+    return [[self GET:[NSString stringWithFormat:@"user/%ld", uid] parameters:nil] map:^id(id value) {
+        return [[User alloc] initWithDictionary:value];
+    }];
 }
 
 @end

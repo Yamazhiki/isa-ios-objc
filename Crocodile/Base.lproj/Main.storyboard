@@ -122,14 +122,20 @@
                                 <rect key="frame" x="171.5" y="246" width="31" height="30"/>
                                 <state key="normal" title="登出"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujY-IC-v58">
+                                <rect key="frame" x="156" y="316" width="62" height="30"/>
+                                <state key="normal" title="切换环境"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eTE-c0-mvL" firstAttribute="centerX" secondItem="gkl-VL-N98" secondAttribute="centerX" id="6ER-zG-Ug1"/>
                             <constraint firstItem="eTE-c0-mvL" firstAttribute="top" secondItem="gkl-VL-N98" secondAttribute="top" constant="37" id="LKn-01-i6Q"/>
                             <constraint firstItem="oBd-YN-b2B" firstAttribute="centerX" secondItem="eTE-c0-mvL" secondAttribute="centerX" id="hzN-Km-Zlg"/>
+                            <constraint firstItem="ujY-IC-v58" firstAttribute="top" secondItem="oBd-YN-b2B" secondAttribute="bottom" constant="40" id="neT-1L-ZTx"/>
                             <constraint firstItem="esd-1S-gSl" firstAttribute="top" secondItem="eTE-c0-mvL" secondAttribute="bottom" constant="62" id="tym-gd-Knd"/>
                             <constraint firstItem="esd-1S-gSl" firstAttribute="centerX" secondItem="eTE-c0-mvL" secondAttribute="centerX" id="wAs-ac-ToP"/>
+                            <constraint firstItem="ujY-IC-v58" firstAttribute="centerX" secondItem="oBd-YN-b2B" secondAttribute="centerX" id="wZ2-nn-ecH"/>
                             <constraint firstItem="oBd-YN-b2B" firstAttribute="top" secondItem="eTE-c0-mvL" secondAttribute="bottom" constant="124" id="xz3-d3-yro"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gkl-VL-N98"/>
@@ -138,6 +144,7 @@
                     <connections>
                         <outlet property="logoutOutlet" destination="oBd-YN-b2B" id="eJN-f3-6fi"/>
                         <outlet property="statusOutlet" destination="eTE-c0-mvL" id="aav-P2-vC7"/>
+                        <outlet property="switchOutlet" destination="ujY-IC-v58" id="PyS-MM-FKl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xw2-L7-X4z" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,15 +7,17 @@
 
 @class RACCommand;
 @class RACSignal;
-@class HttpClient;
+@class ApiClient;
+@protocol ApiClientType;
+@protocol AccountValidatorType;
 
-@interface LoginViewModel : NSObject
+@interface LoginViewModel: NSObject
 @property(nonatomic, retain) NSString *username;
 @property(nonatomic, retain) NSString *password;
 @property(nonatomic, retain) RACCommand *submitCmd;
 
 @property(readonly) RACSignal *canLogin;
 
-- (instancetype)initWithClient:(HttpClient *)client;
+- (instancetype)initWithClient:(id<ApiClientType>)client validator:(id<AccountValidatorType>)validator;
 
 @end

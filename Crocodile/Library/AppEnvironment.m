@@ -9,12 +9,13 @@
 #import "AppEnvironment.h"
 #import "Environment.h"
 #import "User.h"
-#import "HttpClient.h"
+#import "ApiClient.h"
 #import "TokenCheckInjector.h"
 #import "ClientConfigImp.h"
 #import "AliPusher.h"
 #import "TxLiveStream.h"
 #import "UserType.h"
+#import "MockApiClient.h"
 
 static pthread_rwlock_t lock = PTHREAD_RWLOCK_INITIALIZER;
 
@@ -27,7 +28,7 @@ static AppCurrentStatus status = {AppModeDebug, AppLiveStreamSDKTypeTx};
 
 @interface AppEnvironment (Private)
 - (Environment *)genEnv;
-- (HttpClient *)genApiFrom:(AppMode)mode;
+- (id<ApiClientType>)genApiFrom:(AppMode)mode;
 - (id<LiveStreamPusherType>)genLiveStreamFrom:(AppLiveStreamSDKType)type;
 @end
 
@@ -104,15 +105,20 @@ static AppCurrentStatus status = {AppModeDebug, AppLiveStreamSDKTypeTx};
 
 @implementation AppEnvironment (Private)
 - (Environment *)genEnv {
-    HttpClient *client = [self genApiFrom:status.mode];
+    ApiClient *client = [self genApiFrom:status.mode];
     id<LiveStreamPusherType> liveStream = [self genLiveStreamFrom:status.liveStreamPusher];
     return [[Environment alloc] initWithUser:nil api:client liveStream:liveStream beauty:nil];
 }
-- (HttpClient *)genApiFrom:(AppMode)mode {
-    TokenCheckInjector *tokenChecker = [[TokenCheckInjector alloc] initWithObserver:_sessionUpdateSubject];
-    HttpClient *client = [[HttpClient alloc] initWithConfig:[[ClientConfigImp alloc] initWithMode:mode]];
-    [client addInjector:tokenChecker];
-    return client;
+- (id<ApiClientType>)genApiFrom:(AppMode)mode {
+    switch (mode) {
+        case AppModeSimulate:return [MockApiClient new];
+        default: {
+            TokenCheckInjector *tokenChecker = [[TokenCheckInjector alloc] initWithObserver:_sessionUpdateSubject];
+            ApiClient *client = [[ApiClient alloc] initWithConfig:[[ClientConfigImp alloc] initWithMode:mode]];
+            [client addInjector:tokenChecker];
+            return client;
+        }
+    }
 }
 
 - (id<LiveStreamPusherType>)genLiveStreamFrom:(AppLiveStreamSDKType)type {

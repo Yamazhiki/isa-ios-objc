@@ -4,6 +4,7 @@
 //
 
 #import <AVFoundation/AVFoundation.h>
+#import <CloudKit/CloudKit.h>
 #import "User.h"
 
 @implementation User {
@@ -12,12 +13,18 @@
 @synthesize uid;
 @synthesize name;
 
+- (instancetype)initWithUID:(NSInteger)uid1 name:(NSString *)name1 {
+    self = [super init];
+    uid = uid1;
+    name = name1;
+    return self;
+}
 - (instancetype)initWithDictionary:(NSDictionary *)src {
-  self = [super init];
-  if (self) {
-      uid = [src[@"id"] integerValue];
-      name = src[@"login"];
-  }
-  return self;
+    self = [super init];
+    if (self) {
+        uid = [src[@"id"] integerValue];
+        name = src[@"login"];
+    }
+    return self;
 }
 @end

@@ -6,10 +6,11 @@
 #import <Foundation/Foundation.h>
 #import "UserType.h"
 
-@interface User : NSObject<UserType>
+@interface User: NSObject<UserType>
 
 @property(readonly) NSString *name;
 
+- (instancetype)initWithUID:(NSInteger)uid name:(NSString *)name;
 - (instancetype)initWithDictionary:(NSDictionary *)src;
 
 @end
