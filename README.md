@@ -7,6 +7,12 @@
 2.MVVM 表现形式 (ObjC ReactiveCocoa Swfit版本 RxSwift，Android版本 RxJava,RxKotlin)  
 3.多环境任意切换  
 4.无API开发(可本地模拟API)  
+5.单元测试(已有部分) 
+
+## 将要做?
+1.UIViewController Intent（类似于Android Swift版本已经实现）  
+2.路由(其实这个挺恶心的)？  
+3.AppEnvironment 可恢复上一次状态 
        
 
 ## Swift 版本
@@ -17,4 +23,6 @@ The [ISA-ANDROID](https://github.com/Yamazhiki/isa-android)
 
 ####
 clone 下来先 pod 啦啦
+
+也没有打算在碰Objective-C·正好有个机会
 如果有疑问 微信: Wiriamu
