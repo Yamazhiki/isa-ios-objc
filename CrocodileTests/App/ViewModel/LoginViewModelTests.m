@@ -6,7 +6,8 @@
 #import <Kiwi/Kiwi.h>
 #import <ReactiveObjC/RACSignal.h>
 #import "LoginViewModel.h"
-#import "HttpClient.h"
+#import "ApiClient.h"
+#import "AccountValidatorImp.h"
 
 SPEC_BEGIN(LoginViewModelSpec)
 
@@ -14,7 +15,7 @@ SPEC_BEGIN(LoginViewModelSpec)
             __block LoginViewModel *vm = nil;
 
             beforeEach(^{
-                vm = [[LoginViewModel alloc] initWithClient:[HttpClient new]];
+                vm = [[LoginViewModel alloc] initWithClient:[ApiClient new] validator:[AccountValidatorImp new]];
             });
 
             afterEach(^{
