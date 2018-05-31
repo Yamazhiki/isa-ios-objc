@@ -18,8 +18,6 @@
 @property(readonly) id<ApiClientType> api;
 @property(readonly) id<LiveStreamPusherType> liveSteam;
 @property(readonly) id<LiveStreamBeautyType> beauty;
-
-- (instancetype)initWithUser:(User *)user;
 /**
  * 构造
  * @param user  当前用户
