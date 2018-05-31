@@ -13,6 +13,7 @@ target 'Crocodile' do
   target 'CrocodileTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Kiwi'
   end
 
   target 'CrocodileUITests' do

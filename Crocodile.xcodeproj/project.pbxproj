@@ -275,6 +275,7 @@
 				1A91F9D05205FEC093BE75AC /* TestUser.h */,
 				1A91F3832933CD637E31645F /* TestUser.m */,
 				1A91F6BFC66556D6F4C8B83B /* LIbrary */,
+				1A91FCB8830D51FDB813F133 /* App */,
 			);
 			path = CrocodileTests;
 			sourceTree = "<group>";
@@ -297,6 +298,13 @@
 				1A91F070151EB6383912F173 /* ViewModel */,
 				1A91FA65003CD747A7F8FC71 /* Model */,
 				1A91F0D9B835A1B9FD5A745B /* Repository */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1A91FCB8830D51FDB813F133 /* App */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -370,6 +378,7 @@
 				1A91FC283B0F33477142181E /* Sources */,
 				1A91F3AF927DC879C591F00F /* Frameworks */,
 				1A91F65F5F06837694F4E5F3 /* Resources */,
+				E3A6106AA4805536C81BBB6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -531,6 +540,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3A6106AA4805536C81BBB6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CrocodileTests/Pods-CrocodileTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kiwi/Kiwi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kiwi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrocodileTests/Pods-CrocodileTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECEA6C0EB2960C74F1B7D22B /* [CP] Embed Pods Frameworks */ = {

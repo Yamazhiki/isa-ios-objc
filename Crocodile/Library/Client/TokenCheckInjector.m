@@ -3,14 +3,15 @@
 // Copyright (c) 2018 Yamazhiki. All rights reserved.
 //
 
+#import <ReactiveObjC/RACChannel.h>
 #import "TokenCheckInjector.h"
 #import "RACSubject.h"
 
 
 @implementation TokenCheckInjector {
-    id <RACSubscriber> _tokenExpire;
+    id<RACSubscriber> _tokenExpire;
 }
-- (instancetype)initWithObserver:(id <RACSubscriber>)observer {
+- (instancetype)initWithObserver:(id<RACSubscriber>)observer {
     self = [super init];
     if (self) {
         _tokenExpire = observer;
@@ -18,10 +19,9 @@
     return self;
 }
 
-
 - (void)finishResponse:(NSHTTPURLResponse *)response responseObject:(id)responseObject {
-    if (response.statusCode == 302) {
-        [_tokenExpire sendNext:nil];
+    if (response.statusCode == 403) {
+        [_tokenExpire sendNext:@1];
     }
 }
 

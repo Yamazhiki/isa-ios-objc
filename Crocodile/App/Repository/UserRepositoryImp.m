@@ -31,24 +31,24 @@
 - (RACSignal <NSArray<User *> *> *)getUsers {
     return [[_manager GET:@"users" parameters:nil]
         map:^id(id value) {
-          NSMutableArray *array = [NSMutableArray array];
-          for (NSDictionary *item in value) {
-              [array addObject:[[User alloc] initWithDictionary:item]];
-          }
-          return array;
+            NSMutableArray *array = [NSMutableArray array];
+            for (NSDictionary *item in value) {
+                [array addObject:[[User alloc] initWithDictionary:item]];
+            }
+            return array;
         }];
 }
 
 - (RACSignal <User *> *)getUser:(NSInteger)uid {
 
     return [[_manager GET:[NSString stringWithFormat:@"user/%d", uid] parameters:nil] map:^id(id value) {
-      return [[User alloc] initWithDictionary:value];
+        return [[User alloc] initWithDictionary:value];
     }];
 
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-      [subscriber sendNext:[[User alloc] init]];
-      [subscriber sendCompleted];
-      return nil;
+        [subscriber sendNext:[[User alloc] init]];
+        [subscriber sendCompleted];
+        return nil;
     }];
 }
 

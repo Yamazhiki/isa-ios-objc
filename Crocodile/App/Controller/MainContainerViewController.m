@@ -18,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     MainContainerViewModel *viewModel = [[MainContainerViewModel alloc] init];
+
+    [[[AppEnvironment shared] sessionUpdate] subscribeNext:^(id x) {
+        NSLog(@"%@", x);
+    }];
+
     [viewModel.sessionUpdate subscribeNext:^(id x) {
         BOOL isLogin = [x boolValue];
         if (isLogin) {

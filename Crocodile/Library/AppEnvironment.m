@@ -19,8 +19,8 @@
 static pthread_rwlock_t lock = PTHREAD_RWLOCK_INITIALIZER;
 
 typedef struct {
-  AppMode mode;
-  AppLiveStreamSDKType liveStreamPusher;
+    AppMode mode;
+    AppLiveStreamSDKType liveStreamPusher;
 } AppCurrentStatus;
 
 static AppCurrentStatus status = {AppModeDebug, AppLiveStreamSDKTypeTx};
@@ -41,7 +41,7 @@ static AppCurrentStatus status = {AppModeDebug, AppLiveStreamSDKTypeTx};
     static AppEnvironment *_instance;
     static dispatch_once_t token;
     dispatch_once(&token, ^{
-      _instance = [[AppEnvironment alloc] init];
+        _instance = [[AppEnvironment alloc] init];
     });
     return _instance;
 }
@@ -78,7 +78,8 @@ static AppCurrentStatus status = {AppModeDebug, AppLiveStreamSDKTypeTx};
 
 - (void)updateUser:(id<UserType>)user {
     Environment *env =
-        [[Environment alloc] initWithUser:user api:self.current.api liveStream:self.current.liveSteam beauty:self.current.beauty];
+        [[Environment alloc]
+            initWithUser:user api:self.current.api liveStream:self.current.liveSteam beauty:self.current.beauty];
     [self _replaceEnv:env];
     [_sessionUpdateSubject sendNext:@(user && user.uid > 0 ? UserEventTypeUpdate : UserEventTypeLogout)];
 }

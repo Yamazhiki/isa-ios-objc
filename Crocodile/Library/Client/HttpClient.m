@@ -9,13 +9,13 @@
 #import "HttpClient.h"
 #import "ClientConfigType.h"
 
-@implementation HttpClient
-{
+@implementation HttpClient {
     NSMutableArray <id<HttpInjector>> *_injectors;
 }
 
 - (instancetype)initWithConfig:(id<ClientConfigType>)config {
     self = [super initWithBaseURL:config.apiBaseURL];
+    _injectors = [NSMutableArray array];
     return self;
 }
 
