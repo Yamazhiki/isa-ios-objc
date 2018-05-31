@@ -4,9 +4,9 @@
 
 ## 优点?
 1.高内聚，低耦合  
-2.MVVM 表现形式 (ObjC ReactiveCocoa Swfit版本 RxSwift，Android版本 RxJava,RxKotlin)
+2.MVVM 表现形式 (ObjC ReactiveCocoa Swfit版本 RxSwift，Android版本 RxJava,RxKotlin)  
 3.多环境任意切换  
-4.无API开发(可本地模拟API)
+4.无API开发(可本地模拟API)  
        
 
 ## Swift 版本
