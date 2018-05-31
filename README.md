@@ -10,7 +10,7 @@
 5.单元测试(已有部分) 
 
 ## 将要做?
-1.UIViewController Intent（类似于Android）  
+1.UIViewController Intent（类似于Android Swift版本已经实现）  
 2.路由(其实这个挺恶心的)？  
        
 
