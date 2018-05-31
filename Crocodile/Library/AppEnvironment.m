@@ -62,6 +62,7 @@ static AppCurrentStatus status = {AppModeDebug, AppLiveStreamSDKTypeTx};
 }
 
 - (void)switchMode:(AppMode)mode {
+    status.mode = mode;
     Environment *env = [[Environment alloc] initWithUser:self.current.user
                                                      api:[self genApiFrom:mode]
                                               liveStream:self.current.liveSteam

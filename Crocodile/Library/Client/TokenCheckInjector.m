@@ -5,7 +5,6 @@
 
 #import <ReactiveObjC/RACChannel.h>
 #import "TokenCheckInjector.h"
-#import "RACSubject.h"
 
 
 @implementation TokenCheckInjector {
