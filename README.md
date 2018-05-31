@@ -22,4 +22,6 @@ The [ISA-ANDROID](https://github.com/Yamazhiki/isa-android)
 
 ####
 clone 下来先 pod 啦啦
+
+也没有打算在碰Objective-C·正好有个机会
 如果有疑问 微信: Wiriamu
