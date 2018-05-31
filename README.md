@@ -7,6 +7,7 @@
 2.MVVM 表现形式 (ObjC ReactiveCocoa Swfit版本 RxSwift，Android版本 RxJava,RxKotlin)  
 3.多环境任意切换  
 4.无API开发(可本地模拟API)  
+5.单元测试(已有部分)  
        
 
 ## Swift 版本
