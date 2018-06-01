@@ -9,35 +9,37 @@
 @class RACSignal;
 @class User;
 @protocol UserType;
+
 /**
  * App运行环境
  */
 typedef NS_ENUM(NSInteger) {
-  /*调试*/
-      AppModeDebug = 0,
-  /*模拟*/
-      AppModeSimulate,
-  /*生产*/
-      AppModeProduction
+    /*调试*/
+        AppModeDebug = 0,
+    /*模拟*/
+        AppModeSimulate,
+    /*生产*/
+        AppModeProduction
 } AppMode;
+
 /**
  * 推流SDK
  */
 typedef NS_ENUM(NSInteger) {
-  /*阿里*/
-      AppLiveStreamSDKTypeAli,
-  /*腾讯*/
-      AppLiveStreamSDKTypeTx
+    /*阿里*/
+        AppLiveStreamSDKTypeAli,
+    /*腾讯*/
+        AppLiveStreamSDKTypeTx
 } AppLiveStreamSDKType;
 
 typedef NS_ENUM(NSInteger) {
-  UserEventTypeNone,
-  UserEventTypeTokenExpired,
-  UserEventTypeUpdate,
-  UserEventTypeLogout
+    UserEventTypeNone,
+    UserEventTypeTokenExpired,
+    UserEventTypeUpdate,
+    UserEventTypeLogout
 } UserEventType;
 
-@interface AppEnvironment : NSObject
+@interface AppEnvironment: NSObject
 
 + (instancetype)shared;
 

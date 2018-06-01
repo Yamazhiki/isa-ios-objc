@@ -7,16 +7,23 @@
 		<key>-[AppEnvironmentTests testLiveStream].xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
+			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>3</integer>
 		</dict>
 		<key>-[AppEnvironmentTests testUser].xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
+			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>-[LoginViewModelSpec].xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>10</integer>
 		</dict>
 		<key>Api.xcscheme</key>
 		<dict>
@@ -38,25 +45,18 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
-		<key>-[LoginViewModelSpec].xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>12</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1A91F8B2F8EB0E1C24089659</key>
 		<dict>
 			<key>primary</key>
-			<true />
+			<true/>
 		</dict>
 		<key>1A91FC1E6A39ECC32A00F7DB</key>
 		<dict>
 			<key>primary</key>
-			<true />
+			<true/>
 		</dict>
 	</dict>
 </dict>

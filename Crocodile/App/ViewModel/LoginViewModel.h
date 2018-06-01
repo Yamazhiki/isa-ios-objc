@@ -12,6 +12,7 @@
 @protocol AccountValidatorType;
 
 @interface LoginViewModel: NSObject
+/*用户输入*/
 @property(nonatomic, retain) NSString *username;
 @property(nonatomic, retain) NSString *password;
 @property(nonatomic, retain) RACCommand *submitCmd;

@@ -14,11 +14,13 @@
 #import "AccountValidatorType.h"
 
 @implementation LoginViewModel {
+
 }
 
 - (instancetype)initWithClient:(id<ApiClientType>)client validator:(id<AccountValidatorType>)validator {
     self = [super init];
     RACSignal *correctInput;
+
     correctInput = [[RACObserve(self, username) combineLatestWith:RACObserve(self, password)]
         map:^id(RACTwoTuple *value) {
             return @([validator invalidateUsername:value.first] && [validator invalidatePassword:value.second]);

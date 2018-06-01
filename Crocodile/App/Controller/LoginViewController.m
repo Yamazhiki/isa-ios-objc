@@ -10,6 +10,7 @@
 #import "AccountValidatorImp.h"
 
 @implementation LoginViewController {
+    LoginViewModel *_viewModel;
     __weak IBOutlet UITextField *_usernameOutlet;
     __weak IBOutlet UITextField *_passwordOutlet;
     __weak IBOutlet UIButton *_submitOutlet;
@@ -20,13 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    LoginViewModel *viewModel =
+    _viewModel =
         [[LoginViewModel alloc] initWithClient:[AppEnvironment shared].current.api validator:[AccountValidatorImp new]];
-    RAC(viewModel, username) = _usernameOutlet.rac_textSignal;
-    RAC(viewModel, password) = _passwordOutlet.rac_textSignal;
-    _submitOutlet.rac_command = viewModel.submitCmd;
+    RAC(_viewModel, username) = _usernameOutlet.rac_textSignal;
+    RAC(_viewModel, password) = _passwordOutlet.rac_textSignal;
 
-    [viewModel.submitCmd.executionSignals subscribeNext:^(RACSignal *x) {
+    _submitOutlet.rac_command = _viewModel.submitCmd;
+
+
+    [_viewModel.submitCmd.executionSignals subscribeNext:^(RACSignal *x) {
         [x subscribeNext:^(id x) {
             [[AppEnvironment shared] updateUser:x];
         }];
