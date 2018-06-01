@@ -7,14 +7,25 @@
 
 typedef NS_ENUM(NSInteger) {
     GET,
-    POST,
-    DELETE,
-    PUT
+    POST
 } Method;
 
 @protocol Request<NSObject>
-@property(readonly) NSDictionary *parameters;
+/**
+ * 路径
+ */
 @property(readonly) NSString *path;
+/**
+ * HttpMethod
+ */
 @property(readonly) Method method;
+@property(readonly) NSDictionary<NSString *, NSString *> *headers;
+/**
+ * 参数
+ */
+@property(readonly) NSDictionary<NSString *, NSString *> *parameters;
+/**
+ * 相应结果类型
+ */
 @property(readonly) Class cls;
 @end

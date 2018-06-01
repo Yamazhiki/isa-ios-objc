@@ -7,5 +7,5 @@
 @protocol Request;
 
 @interface NSMutableURLRequest (Request)
-- (instancetype)initWithRequest:(id<Request>)request baseURL:(NSString *)baseURL;
+- (instancetype)initWithRequest:(id<Request>)request baseURLString:(NSString *)baseURLString;
 @end

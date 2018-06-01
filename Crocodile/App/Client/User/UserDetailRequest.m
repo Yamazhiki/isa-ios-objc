@@ -9,9 +9,9 @@
 
 
 @implementation UserDetailRequest {
-    NSInteger _uid;
+    int _uid;
 }
-- (instancetype)initWithUID:(NSInteger)uid {
+- (instancetype)initWithUID:(int)uid {
     self = [super init];
     _uid = uid;
     return self;
@@ -22,7 +22,11 @@
 }
 
 - (NSString *)path {
-    return [NSString stringWithFormat:@"user/%i", _uid];
+    return [NSString stringWithFormat:@"user/%d", _uid];
+}
+
+- (NSDictionary<NSString *, NSString *> *)headers {
+    return nil;
 }
 
 - (Method)method {

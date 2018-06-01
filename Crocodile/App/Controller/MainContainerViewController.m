@@ -27,7 +27,7 @@
 
     UserClient *client = [[UserClient alloc] init];
     [[client userById:1] subscribeNext:^(id x) {
-
+        NSLog(@"%@", x);
     }];
 
     [viewModel.sessionUpdate subscribeNext:^(id x) {

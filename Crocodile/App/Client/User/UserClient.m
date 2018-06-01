@@ -21,7 +21,7 @@
 
 - (NSURLSessionDataTask *)send:(id<Request>)request completion:(void (^)(id))completion {
     NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc]
-        initWithRequest:request baseURL:USER_HOST];
+        initWithRequest:request baseURLString:USER_HOST];
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *rlt = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData *data,
                                                                                             NSURLResponse *response,
