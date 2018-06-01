@@ -27,4 +27,10 @@
     }
     return self;
 }
+
+- (id)decode:(id)data {
+    id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    return [[User alloc] initWithDictionary:obj];
+}
+
 @end

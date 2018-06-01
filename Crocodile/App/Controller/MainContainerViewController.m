@@ -8,6 +8,7 @@
 #import "MainContainerViewController.h"
 #import "MainContainerViewModel.h"
 #import "AppEnvironment.h"
+#import "UserClient.h"
 
 @implementation MainContainerViewController {
 
@@ -22,6 +23,11 @@
 
     [[[AppEnvironment shared] sessionUpdate] subscribeNext:^(id x) {
         NSLog(@"%@", x);
+    }];
+
+    UserClient *client = [[UserClient alloc] init];
+    [[client userById:1] subscribeNext:^(id x) {
+
     }];
 
     [viewModel.sessionUpdate subscribeNext:^(id x) {
