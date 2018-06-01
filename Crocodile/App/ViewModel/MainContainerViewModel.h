@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 @class RACSignal;
 
-@interface MainContainerViewModel : NSObject
+@interface MainContainerViewModel: NSObject
 
 @property(readonly) RACSignal *sessionUpdate;
 
