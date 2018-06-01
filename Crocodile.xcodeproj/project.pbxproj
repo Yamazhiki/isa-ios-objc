@@ -21,7 +21,6 @@
 		1A91F647E91075DD3F742915 /* MockApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FFE0727600B5943A9A49 /* MockApiClient.m */; };
 		1A91F6A5ABC2DAA7C9483B15 /* Intent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FBE78CBD944A68D41075 /* Intent.m */; };
 		1A91F6F515896A39868E9818 /* AppEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FE61300FF6837222B27E /* AppEnvironment.m */; };
-		1A91F70F79EC1F65FE495021 /* NSMutableURLRequest+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F08914063EBBED716A42 /* NSMutableURLRequest+Request.m */; };
 		1A91F7390B7A2ED76829B6F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F9C03DEEA2D56F8F01A5 /* Main.storyboard */; };
 		1A91F761C0F38ADDE8AFAA6B /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FCAA1ED3C846351BD65D /* LoginViewModel.m */; };
 		1A91F892CF4014AC569C78AD /* CrocodileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F5BD51D954AE6DC35E00 /* CrocodileTests.m */; };
@@ -32,6 +31,7 @@
 		1A91FA7C5193AD55D4A35FF7 /* TestUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F3832933CD637E31645F /* TestUser.m */; };
 		1A91FB1E958B6926B4B80648 /* KoalaBeauty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FE00F688F20971FF5B45 /* KoalaBeauty.m */; };
 		1A91FC16CF984ABFAA9DBC11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FFBBF0EE53909A2A4EB4 /* AppDelegate.m */; };
+		1A91FC277602726EAABC4A6B /* NSMutableURLRequest+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F10F62C0728B014573A2 /* NSMutableURLRequest+Request.m */; };
 		1A91FC6605AC5A17CF29E725 /* Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F3A743033BB3AD7CE0A2 /* Environment.m */; };
 		1A91FCD7F81862844D73678C /* AppEnvironmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F440A79B740CD6FC252F /* AppEnvironmentTests.m */; };
 		1A91FE2CD93B720CC3A1B7AA /* ClientConfigImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FD2995159CA878F1EDD1 /* ClientConfigImp.m */; };
@@ -40,6 +40,11 @@
 		1A91FF7F19F59BC7F5BF65F6 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FBD1A1EADD13DF621091 /* ApiClient.m */; };
 		1A91FFC5D185311AAB6EF4EF /* UserClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FAA1B1A34954610E4A0B /* UserClient.m */; };
 		3830170FC2DC011533C92E19 /* Pods_CrocodileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3953A52F244232D11D094FAB /* Pods_CrocodileUITests.framework */; };
+		ED279EC520C1100100473FD8 /* YZKNetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED279EBC20C1100100473FD8 /* YZKNetWork.framework */; };
+		ED279ECC20C1100100473FD8 /* YZKNetWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED279ECB20C1100100473FD8 /* YZKNetWorkTests.m */; };
+		ED279ECE20C1100100473FD8 /* YZKNetWork.h in Headers */ = {isa = PBXBuildFile; fileRef = ED279EBE20C1100100473FD8 /* YZKNetWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED279ED120C1100100473FD8 /* YZKNetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED279EBC20C1100100473FD8 /* YZKNetWork.framework */; };
+		ED279ED220C1100100473FD8 /* YZKNetWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED279EBC20C1100100473FD8 /* YZKNetWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F788D56E507BD196F3C6A677 /* Pods_Crocodile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB08CDBD7FCD1D7854B4B8B3 /* Pods_Crocodile.framework */; };
 		F976231D2199EC68994D0384 /* Pods_CrocodileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DEEB5EF94D36053FF2D4A6 /* Pods_CrocodileTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,7 +64,42 @@
 			remoteGlobalIDString = 1A91FC1E6A39ECC32A00F7DB;
 			remoteInfo = Crocodile;
 		};
+		ED279EC620C1100100473FD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A91F73C3C45E934F02EAA4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED279EBB20C1100100473FD8;
+			remoteInfo = YZKNetWork;
+		};
+		ED279EC820C1100100473FD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A91F73C3C45E934F02EAA4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A91FC1E6A39ECC32A00F7DB;
+			remoteInfo = Crocodile;
+		};
+		ED279ECF20C1100100473FD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A91F73C3C45E934F02EAA4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED279EBB20C1100100473FD8;
+			remoteInfo = YZKNetWork;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED279ED820C1100100473FD8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED279ED220C1100100473FD8 /* YZKNetWork.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0ED34C3A120E738F0B47976B /* Pods-CrocodileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrocodileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrocodileUITests/Pods-CrocodileUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,14 +107,15 @@
 		1A91F029906F9CC0168C3F2B /* AliPusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPusher.m; sourceTree = "<group>"; };
 		1A91F056837B29790DC3727E /* LoginViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModelTests.m; sourceTree = "<group>"; };
 		1A91F05915DE6B5EB94B3F6B /* MainContainerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContainerViewModel.h; sourceTree = "<group>"; };
-		1A91F08914063EBBED716A42 /* NSMutableURLRequest+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Request.m"; sourceTree = "<group>"; };
 		1A91F0970542B36E6A59EB84 /* KoalaBeauty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoalaBeauty.h; sourceTree = "<group>"; };
+		1A91F0B8AE637BE63C1CFAFA /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		1A91F10F62C0728B014573A2 /* NSMutableURLRequest+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Request.m"; sourceTree = "<group>"; };
 		1A91F10FF61E742FB94C801C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A91F11870A976F60635DB7D /* ApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiClient.h; sourceTree = "<group>"; };
 		1A91F146E4F31B4EF17D7B23 /* TokenCheckInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenCheckInjector.h; sourceTree = "<group>"; };
 		1A91F14A824940DAE9B9BBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A91F16F5E1E2270D75069B8 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		1A91F19030478C3CF7FBDFDD /* MainContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContainerViewController.m; sourceTree = "<group>"; };
-		1A91F34587E8158C37B9E965 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		1A91F34DCE22B09F461D164D /* UIViewController+Intent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Intent.h"; sourceTree = "<group>"; };
 		1A91F35299E07F81294EE655 /* UserType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserType.h; sourceTree = "<group>"; };
 		1A91F3832933CD637E31645F /* TestUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUser.m; sourceTree = "<group>"; };
@@ -84,7 +125,6 @@
 		1A91F47C300E7043F86DDD22 /* TokenCheckInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenCheckInjector.m; sourceTree = "<group>"; };
 		1A91F48A2EFFDE665EEF4317 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		1A91F4A774A6E7F53A7141D3 /* MainContainerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContainerViewModel.m; sourceTree = "<group>"; };
-		1A91F4BB08D702A4F809045D /* Decodable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decodable.h; sourceTree = "<group>"; };
 		1A91F52B561AD15AC668B350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A91F53F87D4F7AEE58E1474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		1A91F54341E18568C0FDA272 /* ApiClientType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiClientType.h; sourceTree = "<group>"; };
@@ -95,7 +135,6 @@
 		1A91F6586A0A1665AF335DBC /* Crocodile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crocodile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A91F6D29E55C7B8F1FB34BF /* AccountValidatorImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountValidatorImp.h; sourceTree = "<group>"; };
 		1A91F6E30834F6B2D3E0D088 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		1A91F7121A2461CB9B6E8FD1 /* NSMutableURLRequest+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Request.h"; sourceTree = "<group>"; };
 		1A91F72CD5F3238B19171B42 /* ClientConfigType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientConfigType.h; sourceTree = "<group>"; };
 		1A91F748963F8CA800692007 /* UserDetailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailRequest.h; sourceTree = "<group>"; };
 		1A91F7BF601C5BB4A2F54D83 /* UserClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserClient.h; sourceTree = "<group>"; };
@@ -110,17 +149,18 @@
 		1A91FB111B0DDA5074CE481D /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		1A91FB204F383F5CF1AFC97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		1A91FB25103E034D0845DADD /* Intent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intent.h; sourceTree = "<group>"; };
+		1A91FB3C34EE624615DE9AFE /* NSMutableURLRequest+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Request.h"; sourceTree = "<group>"; };
 		1A91FB839B3E75E3401548D3 /* Environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
 		1A91FBACE3D3961864CEA2B9 /* CrocodileUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrocodileUITests.m; sourceTree = "<group>"; };
 		1A91FBBAFECC32B94C3B3B8E /* AliPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPusher.h; sourceTree = "<group>"; };
 		1A91FBD1A1EADD13DF621091 /* ApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiClient.m; sourceTree = "<group>"; };
 		1A91FBD7115AA0421206B32A /* MainContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContainerViewController.h; sourceTree = "<group>"; };
-		1A91FBDA525B92039374F190 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		1A91FBDD11E80D16F4A4F577 /* AccountValidatorImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountValidatorImp.m; sourceTree = "<group>"; };
 		1A91FBE78CBD944A68D41075 /* Intent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intent.m; sourceTree = "<group>"; };
 		1A91FC0FFB67C324C8144EC9 /* AppEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEnvironment.h; sourceTree = "<group>"; };
 		1A91FC100DF77BB3D4F569EF /* CrocodileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrocodileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A91FCAA1ED3C846351BD65D /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		1A91FCCDBB8E140C3989661E /* Decodable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decodable.h; sourceTree = "<group>"; };
 		1A91FD2995159CA878F1EDD1 /* ClientConfigImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientConfigImp.m; sourceTree = "<group>"; };
 		1A91FD9870D6766DF45EEE48 /* AccountValidatorType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountValidatorType.h; sourceTree = "<group>"; };
 		1A91FE00F688F20971FF5B45 /* KoalaBeauty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KoalaBeauty.m; sourceTree = "<group>"; };
@@ -139,6 +179,12 @@
 		986B3B719591B58F23BDC047 /* Pods-CrocodileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrocodileUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrocodileUITests/Pods-CrocodileUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9DEBE4B6CEE6E815D0C64688 /* Pods-CrocodileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrocodileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrocodileTests/Pods-CrocodileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB08CDBD7FCD1D7854B4B8B3 /* Pods_Crocodile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crocodile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED279EBC20C1100100473FD8 /* YZKNetWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YZKNetWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED279EBE20C1100100473FD8 /* YZKNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZKNetWork.h; sourceTree = "<group>"; };
+		ED279EBF20C1100100473FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED279EC420C1100100473FD8 /* YZKNetWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YZKNetWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED279ECB20C1100100473FD8 /* YZKNetWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZKNetWorkTests.m; sourceTree = "<group>"; };
+		ED279ECD20C1100100473FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +208,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED279ED120C1100100473FD8 /* YZKNetWork.framework in Frameworks */,
 				F788D56E507BD196F3C6A677 /* Pods_Crocodile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED279EB820C1100100473FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED279EC120C1100100473FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED279EC520C1100100473FD8 /* YZKNetWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +286,8 @@
 		1A91F52D33F62FAB5E155FBE = {
 			isa = PBXGroup;
 			children = (
+				ED279EBD20C1100100473FD8 /* YZKNetWork */,
+				ED279ECA20C1100100473FD8 /* YZKNetWorkTests */,
 				1A91FE8B298C142184A2F9FD /* Products */,
 				1A91FDEC7350179B903C3C56 /* Crocodile */,
 				1A91FBC48833E7A10E0E5280 /* CrocodileTests */,
@@ -273,11 +337,6 @@
 				1A91F54341E18568C0FDA272 /* ApiClientType.h */,
 				1A91F47C300E7043F86DDD22 /* TokenCheckInjector.m */,
 				1A91F146E4F31B4EF17D7B23 /* TokenCheckInjector.h */,
-				1A91F4BB08D702A4F809045D /* Decodable.h */,
-				1A91FBDA525B92039374F190 /* Request.h */,
-				1A91F34587E8158C37B9E965 /* Client.h */,
-				1A91F08914063EBBED716A42 /* NSMutableURLRequest+Request.m */,
-				1A91F7121A2461CB9B6E8FD1 /* NSMutableURLRequest+Request.h */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -399,6 +458,8 @@
 				1A91F6586A0A1665AF335DBC /* Crocodile.app */,
 				1A91FAC37CA3CA46F7D9AE1E /* CrocodileTests.xctest */,
 				1A91FC100DF77BB3D4F569EF /* CrocodileUITests.xctest */,
+				ED279EBC20C1100100473FD8 /* YZKNetWork.framework */,
+				ED279EC420C1100100473FD8 /* YZKNetWorkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -444,7 +505,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ED279EBD20C1100100473FD8 /* YZKNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				ED279EBE20C1100100473FD8 /* YZKNetWork.h */,
+				ED279EBF20C1100100473FD8 /* Info.plist */,
+				1A91F10F62C0728B014573A2 /* NSMutableURLRequest+Request.m */,
+				1A91FCCDBB8E140C3989661E /* Decodable.h */,
+				1A91F0B8AE637BE63C1CFAFA /* Request.h */,
+				1A91F16F5E1E2270D75069B8 /* Client.h */,
+				1A91FB3C34EE624615DE9AFE /* NSMutableURLRequest+Request.h */,
+			);
+			path = YZKNetWork;
+			sourceTree = "<group>";
+		};
+		ED279ECA20C1100100473FD8 /* YZKNetWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED279ECB20C1100100473FD8 /* YZKNetWorkTests.m */,
+				ED279ECD20C1100100473FD8 /* Info.plist */,
+			);
+			path = YZKNetWorkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ED279EB920C1100100473FD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED279ECE20C1100100473FD8 /* YZKNetWork.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1A91F8B2F8EB0E1C24089659 /* CrocodileTests */ = {
@@ -495,15 +590,54 @@
 				1A91FE356D2B549123A17CB5 /* Frameworks */,
 				1A91F6A561A1FAED52151DC6 /* Resources */,
 				ECEA6C0EB2960C74F1B7D22B /* [CP] Embed Pods Frameworks */,
+				ED279ED820C1100100473FD8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ED279ED020C1100100473FD8 /* PBXTargetDependency */,
 			);
 			name = Crocodile;
 			productName = Crocodile;
 			productReference = 1A91F6586A0A1665AF335DBC /* Crocodile.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ED279EBB20C1100100473FD8 /* YZKNetWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED279ED720C1100100473FD8 /* Build configuration list for PBXNativeTarget "YZKNetWork" */;
+			buildPhases = (
+				ED279EB720C1100100473FD8 /* Sources */,
+				ED279EB820C1100100473FD8 /* Frameworks */,
+				ED279EB920C1100100473FD8 /* Headers */,
+				ED279EBA20C1100100473FD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YZKNetWork;
+			productName = YZKNetWork;
+			productReference = ED279EBC20C1100100473FD8 /* YZKNetWork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED279EC320C1100100473FD8 /* YZKNetWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED279ED920C1100100473FD8 /* Build configuration list for PBXNativeTarget "YZKNetWorkTests" */;
+			buildPhases = (
+				ED279EC020C1100100473FD8 /* Sources */,
+				ED279EC120C1100100473FD8 /* Frameworks */,
+				ED279EC220C1100100473FD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED279EC720C1100100473FD8 /* PBXTargetDependency */,
+				ED279EC920C1100100473FD8 /* PBXTargetDependency */,
+			);
+			name = YZKNetWorkTests;
+			productName = YZKNetWorkTests;
+			productReference = ED279EC420C1100100473FD8 /* YZKNetWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -515,6 +649,16 @@
 				TargetAttributes = {
 					1A91FC1E6A39ECC32A00F7DB = {
 						DevelopmentTeam = LQXE5G4L58;
+					};
+					ED279EBB20C1100100473FD8 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = LQXE5G4L58;
+						ProvisioningStyle = Automatic;
+					};
+					ED279EC320C1100100473FD8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1A91FC1E6A39ECC32A00F7DB;
 					};
 				};
 			};
@@ -533,6 +677,8 @@
 				1A91FC1E6A39ECC32A00F7DB /* Crocodile */,
 				1A91F8B2F8EB0E1C24089659 /* CrocodileTests */,
 				1A91FBFF4BAEC96704DF65ED /* CrocodileUITests */,
+				ED279EBB20C1100100473FD8 /* YZKNetWork */,
+				ED279EC320C1100100473FD8 /* YZKNetWorkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -557,6 +703,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1A91F92C0ABAE51009D096C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED279EBA20C1100100473FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED279EC220C1100100473FD8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -684,9 +844,9 @@
 				1A91FE2CD93B720CC3A1B7AA /* ClientConfigImp.m in Sources */,
 				1A91F0809B14007E20C695B7 /* TokenCheckInjector.m in Sources */,
 				1A91F647E91075DD3F742915 /* MockApiClient.m in Sources */,
-				1A91F70F79EC1F65FE495021 /* NSMutableURLRequest+Request.m in Sources */,
 				1A91FFC5D185311AAB6EF4EF /* UserClient.m in Sources */,
 				1A91FA77ED98E32BCE4D0066 /* UserDetailRequest.m in Sources */,
+				1A91FC277602726EAABC4A6B /* NSMutableURLRequest+Request.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +870,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED279EB720C1100100473FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED279EC020C1100100473FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED279ECC20C1100100473FD8 /* YZKNetWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -722,6 +897,21 @@
 			isa = PBXTargetDependency;
 			target = 1A91FC1E6A39ECC32A00F7DB /* Crocodile */;
 			targetProxy = 1A91F85C484F335E661F8E9C /* PBXContainerItemProxy */;
+		};
+		ED279EC720C1100100473FD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED279EBB20C1100100473FD8 /* YZKNetWork */;
+			targetProxy = ED279EC620C1100100473FD8 /* PBXContainerItemProxy */;
+		};
+		ED279EC920C1100100473FD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A91FC1E6A39ECC32A00F7DB /* Crocodile */;
+			targetProxy = ED279EC820C1100100473FD8 /* PBXContainerItemProxy */;
+		};
+		ED279ED020C1100100473FD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED279EBB20C1100100473FD8 /* YZKNetWork */;
+			targetProxy = ED279ECF20C1100100473FD8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -943,6 +1133,82 @@
 			};
 			name = Debug;
 		};
+		ED279ED320C1100100473FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LQXE5G4L58;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YZKNetWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isa.objc.YZKNetWork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED279ED420C1100100473FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LQXE5G4L58;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YZKNetWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isa.objc.YZKNetWork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED279ED520C1100100473FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YZKNetWorkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isa.objc.YZKNetWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crocodile.app/Crocodile";
+			};
+			name = Debug;
+		};
+		ED279ED620C1100100473FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YZKNetWorkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isa.objc.YZKNetWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crocodile.app/Crocodile";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -978,6 +1244,24 @@
 			buildConfigurations = (
 				1A91F0B61E9A8814186CC8EB /* Debug */,
 				1A91FA56F4BE8C240EF14E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED279ED720C1100100473FD8 /* Build configuration list for PBXNativeTarget "YZKNetWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED279ED320C1100100473FD8 /* Debug */,
+				ED279ED420C1100100473FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED279ED920C1100100473FD8 /* Build configuration list for PBXNativeTarget "YZKNetWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED279ED520C1100100473FD8 /* Debug */,
+				ED279ED620C1100100473FD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
