@@ -9,6 +9,6 @@
 @interface Intent<__covariant ValueType>: NSObject
 @property(readonly) ValueType data;
 
-- (instancetype)initWithData:(id)data;
+- (instancetype)initWithData:(ValueType)data;
 
 @end

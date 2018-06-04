@@ -16,9 +16,12 @@ typedef NS_ENUM(NSInteger) {
  */
 @property(readonly) NSString *path;
 /**
- * HttpMethod
+ * HttpMethod GET，POST
  */
 @property(readonly) Method method;
+/**
+ * Http头设置
+ */
 @property(readonly) NSDictionary<NSString *, NSString *> *headers;
 /**
  * 参数

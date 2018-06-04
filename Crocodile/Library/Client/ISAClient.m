@@ -4,13 +4,11 @@
 //
 
 #import <CloudKit/CloudKit.h>
-#import <ReactiveObjC/RACSignal.h>
-#import "BaseClient.h"
+#import "ISAClient.h"
 #import "NSMutableURLRequest+Request.h"
-#import "ApiClient.h"
 
 
-@implementation BaseClient {
+@implementation ISAClient {
     NSMutableArray <id<Injector>> *_injectors;
     NSURLSession *_session;
     NSString *_baseURLString;
@@ -18,6 +16,8 @@
 
 
 - (instancetype)initWithBaseURLString:(NSString *)baseURLString {
+    self = [super init];
+    _baseURLString = baseURLString;
     _session = NSURLSession.sharedSession;
     _injectors = [NSMutableArray array];
     return self;
@@ -33,13 +33,15 @@
 }
 
 - (NSURLSessionDataTask *)send:(id<Request>)request completion:(void (^)(NSData *, NSError *))completion {
-    return [_session                                        dataTaskWithRequest:[[NSMutableURLRequest alloc]
+    NSURLSessionDataTask *task = [_session                  dataTaskWithRequest:[[NSMutableURLRequest alloc]
         initWithRequest:request baseURLString:_baseURLString] completionHandler:^(NSData *data,
                                                                                   NSURLResponse *response,
                                                                                   NSError *error) {
         [self forInjector:response data:data];
         completion(data, error);
     }];
+    [task resume];
+    return task;
 }
 
 - (void)forInjector:(NSURLResponse *)response data:(NSData *)data {
