@@ -8,7 +8,6 @@
 #import "MainContainerViewController.h"
 #import "MainContainerViewModel.h"
 #import "AppEnvironment.h"
-#import "UserClient.h"
 
 @implementation MainContainerViewController {
 

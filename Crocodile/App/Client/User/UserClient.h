@@ -6,12 +6,12 @@
 #import <Foundation/Foundation.h>
 #import "Client.h"
 #import "DataStatus.h"
-#import "BaseClient.h"
+#import "ISAClient.h"
 @class RACSignal;
 @class DataStatus;
 @class User;
 
-@interface UserClient: BaseClient
+@interface UserClient: ISAClient
 
 
 /**

@@ -6,6 +6,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CloudKit/CloudKit.h>
 #import "User.h"
+#import "NSData+Object.h"
 
 @implementation User {
 }
@@ -35,6 +36,14 @@
 
 - (NSArray <User *> *)fromData:(NSData *)data {
     return nil;
+}
++ (NSArray <User *> *)fromData:(NSData *)data {
+    NSArray <NSDictionary *> *objects = data.object;
+    NSMutableArray *rlt = [NSMutableArray array];
+    [objects enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
+        [rlt addObject:[[User alloc] initWithDictionary:obj]];
+    }];
+    return rlt;
 }
 
 @end

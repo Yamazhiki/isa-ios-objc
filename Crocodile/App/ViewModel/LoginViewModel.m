@@ -9,6 +9,8 @@
 #import <ReactiveObjC/NSObject+RACPropertySubscribing.h>
 #import <ReactiveObjC/RACSignal.h>
 #import <ReactiveObjC/RACSignal+Operations.h>
+#import <ReactiveObjC/RACSubject.h>
+#import <ReactiveObjC/RACScheduler.h>
 #import "LoginViewModel.h"
 #import "ApiClient.h"
 #import "AccountValidatorType.h"
@@ -26,10 +28,23 @@
             return @([validator invalidateUsername:value.first] && [validator invalidatePassword:value.second]);
         }];
 
+    RACSubject *subject = RACSubject.subject;
     _canLogin = correctInput;
     _submitCmd = [[RACCommand alloc] initWithEnabled:correctInput signalBlock:^RACSignal *(id input) {
+        [subject sendNext:@1];
         return [client userById:1];
     }];
+
+    RACSignal *signal = [subject scanWithStart:@100 reduce:^id(id running, id next) {
+        NSLog(@"-----%@", running);
+        return @([running intValue] + [next intValue]);
+    }];
+
+
+    [[signal deliverOn:[RACScheduler schedulerWithPriority:RACSchedulerPriorityBackground]] take:1]
+        subscribeNext:^(id x) {
+            NSLog(@"-----%@", x);
+        }];
     return self;
 }
 

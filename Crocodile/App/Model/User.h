@@ -5,9 +5,8 @@
 
 #import <Foundation/Foundation.h>
 #import "UserType.h"
-#import "Decodable.h"
 
-@interface User: NSObject<UserType, Decodable>
+@interface User: NSObject<UserType>
 
 @property(readonly) NSString *name;
 

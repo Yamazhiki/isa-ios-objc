@@ -5,13 +5,12 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import "UserDetailRequest.h"
-#import "User.h"
 
 
 @implementation UserDetailRequest {
-    int _uid;
+    NSInteger _uid;
 }
-- (instancetype)initWithUID:(int)uid {
+- (instancetype)initWithUID:(NSInteger)uid {
     self = [super init];
     _uid = uid;
     return self;
@@ -31,10 +30,6 @@
 
 - (Method)method {
     return GET;
-}
-
-- (Class)cls {
-    return [User class];
 }
 
 @end

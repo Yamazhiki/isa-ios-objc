@@ -7,11 +7,11 @@
 
 
 @implementation NSData (Object)
-- (id)dictionary {
+- (id)object {
     NSError *error;
     NSDictionary *dic =
         [NSJSONSerialization JSONObjectWithData:self options:NSJSONReadingAllowFragments error:&error];
-    if (!error) {
+    if (error) {
         return nil;
     }
     return dic;

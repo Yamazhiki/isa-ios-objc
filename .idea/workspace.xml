@@ -2,29 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b119325-09d6-47fb-80ba-8c103f948f64" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Crocodile/App/Client/User/UsersRequest.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crocodile/App/Client/User/UsersRequest.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crocodile/App/Model/ServerError.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crocodile/App/Model/ServerError.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crocodile/Library/Client/BaseClient.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crocodile/Library/Client/BaseClient.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crocodile/Library/Client/DataStatus.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crocodile/Library/Client/DataStatus.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crocodile.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crocodile.xcworkspace/xcuserdata/Yamazhiki.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile.xcworkspace/xcuserdata/Yamazhiki.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.m" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crocodile/App/Client/User/UserDetailRequest.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/Client/User/UserDetailRequest.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crocodile/App/Client/User/UserDetailRequest.m" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/Client/User/UserDetailRequest.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crocodile/App/Controller/MainContainerViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/Controller/MainContainerViewController.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crocodile/App/Model/User.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/Model/User.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crocodile/App/Model/User.m" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/Model/User.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crocodile/App/Net/ApiClient.m" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/Net/ApiClient.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crocodile/App/ViewModel/MainContainerViewModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/ViewModel/MainContainerViewModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crocodile/App/ViewModel/LoginViewModel.m" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/ViewModel/LoginViewModel.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crocodile/App/ViewModel/MainContainerViewModel.m" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/App/ViewModel/MainContainerViewModel.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crocodile/Library/Client/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/Library/Client/Client.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crocodile/Library/Client/Request.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/Library/Client/Request.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.m" beforeDir="false" afterPath="$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crocodile/Library/Category/UIViewController+Intent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crocodile/Library/Category/UIViewController+Intent.m" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,115 +28,109 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_E9E4D5DA-CD9C-486F-85F6-7464B6AE7442" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/ISAClient.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+              <folding>
+                <element signature="e#100#133#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/Client.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-              <folding>
-                <element signature="e#100#134#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-              <folding>
-                <element signature="e#100#133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/DataStatus.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UsersRequest.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crocodile/App/Model/User.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-              <folding>
-                <element signature="e#92#125#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UserDetailRequest.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="38" />
-              <folding>
-                <element signature="e#100#137#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crocodile/App/Model/User.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UsersRequest.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-              <folding>
-                <element signature="e#100#133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/Request.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+            <state relative-caret-position="377">
+              <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UserDetailRequest.h">
+        <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-              <folding>
-                <element signature="e#100#133#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-254">
+              <caret line="84" column="3" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="214" column="37" selection-start-line="214" selection-start-column="37" selection-end-line="214" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="95" column="44" lean-forward="true" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3601">
+              <caret line="290" column="25" selection-start-line="290" selection-start-column="25" selection-end-line="290" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="272" column="42" lean-forward="true" selection-start-line="272" selection-start-column="42" selection-end-line="272" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/ISAClient.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="128" column="64" lean-forward="true" selection-start-line="128" selection-start-column="64" selection-end-line="128" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>take</find>
+      <find>dataTaskWithRequest</find>
+      <find>count</find>
+      <find>countOfBytes</find>
+      <find>countOf</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -151,10 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Crocodile/Library/Category/UIViewController+Intent.m" />
-        <option value="$PROJECT_DIR$/Crocodile/Library/Client/ApiClientTYpe.h" />
-        <option value="$PROJECT_DIR$/Crocodile/App/Net/HttpClient.m" />
-        <option value="$PROJECT_DIR$/Crocodile/App/Net/HttpClient.h" />
         <option value="$PROJECT_DIR$/Crocodile/App/Net/UserRepositoryImp.m" />
         <option value="$PROJECT_DIR$/Crocodile/App/Net/ApiClient.h" />
         <option value="$PROJECT_DIR$/Crocodile/App/Net/MockApiClient.h" />
@@ -162,7 +145,6 @@
         <option value="$PROJECT_DIR$/Crocodile/Library/Environment.h" />
         <option value="$PROJECT_DIR$/Crocodile/Library/Client/TokenCheckInjector.m" />
         <option value="$PROJECT_DIR$/Crocodile/Library/AppEnvironment.m" />
-        <option value="$PROJECT_DIR$/Crocodile/App/ViewModel/LoginViewModel.m" />
         <option value="$PROJECT_DIR$/Crocodile/App/ViewModel/LoginViewModel.h" />
         <option value="$PROJECT_DIR$/Crocodile/Library/AppEnvironment.h" />
         <option value="$PROJECT_DIR$/Crocodile/Library/Client/ApiClientType.h" />
@@ -179,29 +161,34 @@
         <option value="$PROJECT_DIR$/YZKNetWork/Request.h" />
         <option value="$PROJECT_DIR$/YZKNetWork/NSMutableURLRequest+Request.m" />
         <option value="$PROJECT_DIR$/Crocodile/App/Client/User/UserDetailRequest.h" />
-        <option value="$PROJECT_DIR$/Crocodile/App/Client/User/UserDetailRequest.m" />
         <option value="$PROJECT_DIR$/Crocodile/Library/Client/NSMutableURLRequest+Request.m" />
         <option value="$PROJECT_DIR$/Crocodile/App/Net/ApiClient.m" />
         <option value="$PROJECT_DIR$/Crocodile/App/ViewModel/MainContainerViewModel.h" />
         <option value="$PROJECT_DIR$/Crocodile/Library/Client/DataStatus.h" />
         <option value="$PROJECT_DIR$/Crocodile/Library/Client/DataStatus.m" />
-        <option value="$PROJECT_DIR$/Crocodile/App/Controller/MainContainerViewController.m" />
-        <option value="$PROJECT_DIR$/Crocodile/App/ViewModel/MainContainerViewModel.m" />
         <option value="$PROJECT_DIR$/Crocodile/Library/Client/BaseClient.h" />
         <option value="$PROJECT_DIR$/Crocodile/App/Model/ServerError.h" />
         <option value="$PROJECT_DIR$/Crocodile/App/Model/ServerError.m" />
         <option value="$PROJECT_DIR$/Crocodile/Library/Client/NSMutableURLRequest+Request.h" />
-        <option value="$PROJECT_DIR$/Crocodile/Library/Client/Client.h" />
-        <option value="$PROJECT_DIR$/Crocodile/Library/Client/BaseClient.m" />
-        <option value="$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.h" />
-        <option value="$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.m" />
         <option value="$PROJECT_DIR$/Crocodile/App/Client/User/UsersRequest.h" />
         <option value="$PROJECT_DIR$/Crocodile/App/Client/User/UsersRequest.m" />
-        <option value="$PROJECT_DIR$/Crocodile/Library/Client/Request.h" />
-        <option value="$PROJECT_DIR$/Crocodile/App/Model/User.h" />
-        <option value="$PROJECT_DIR$/Crocodile/App/Model/User.m" />
         <option value="$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.h" />
+        <option value="$PROJECT_DIR$/Crocodile/Library/Intent.h" />
+        <option value="$PROJECT_DIR$/Crocodile/Library/Category/UIViewController+Intent.m" />
+        <option value="$PROJECT_DIR$/Crocodile/App/Model/User.h" />
+        <option value="$PROJECT_DIR$/Crocodile/App/ViewModel/MainContainerViewModel.m" />
+        <option value="$PROJECT_DIR$/Crocodile/Library/Client/BaseClient.m" />
+        <option value="$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.h" />
         <option value="$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.m" />
+        <option value="$PROJECT_DIR$/Crocodile/App/Model/User.m" />
+        <option value="$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.m" />
+        <option value="$PROJECT_DIR$/Crocodile/App/Controller/MainContainerViewController.m" />
+        <option value="$PROJECT_DIR$/Crocodile/App/Client/User/UserDetailRequest.m" />
+        <option value="$PROJECT_DIR$/Crocodile/App/ViewModel/LoginViewModel.m" />
+        <option value="$PROJECT_DIR$/Crocodile/Library/Client/ISAClient.m" />
+        <option value="$PROJECT_DIR$/Crocodile/Library/Client/ISAClient.h" />
+        <option value="$PROJECT_DIR$/Crocodile/Library/Client/Client.h" />
+        <option value="$PROJECT_DIR$/Crocodile/Library/Client/Request.h" />
       </list>
     </option>
   </component>
@@ -213,9 +200,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="-1580" />
+    <option name="y" value="183" />
+    <option name="width" value="1280" />
+    <option name="height" value="796" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -264,14 +252,7 @@
               <item name="Crocodile" type="1d218c8b:XcodeProjectNode" />
               <item name="Crocodile" type="fcab9f18:XcodeViewNode" />
               <item name="App" type="fcab9f18:XcodeViewNode" />
-              <item name="Controller" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Crocodile" type="1d218c8b:XcodeProjectNode" />
-              <item name="Crocodile" type="fcab9f18:XcodeViewNode" />
-              <item name="App" type="fcab9f18:XcodeViewNode" />
-              <item name="Model" type="fcab9f18:XcodeViewNode" />
+              <item name="ViewModel" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -285,6 +266,13 @@
               <item name="Crocodile" type="fcab9f18:XcodeViewNode" />
               <item name="Library" type="fcab9f18:XcodeViewNode" />
               <item name="Category" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Crocodile" type="1d218c8b:XcodeProjectNode" />
+              <item name="Crocodile" type="fcab9f18:XcodeViewNode" />
+              <item name="Library" type="fcab9f18:XcodeViewNode" />
+              <item name="Client" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -305,6 +293,13 @@
               <item name="Pods" type="1d218c8b:XcodeProjectNode" />
               <item name="Pods" type="fcab9f18:XcodeViewNode" />
               <item name="AFNetworking" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
+              <item name="Pods" type="fcab9f18:XcodeViewNode" />
+              <item name="AFNetworking" type="fcab9f18:XcodeViewNode" />
+              <item name="NSURLSession" type="fcab9f18:XcodeViewNode" />
             </path>
           </expand>
           <select />
@@ -378,7 +373,7 @@
       <workItem from="1527817674984" duration="864000" />
       <workItem from="1527818871186" duration="9719000" />
       <workItem from="1527842584351" duration="2093000" />
-      <workItem from="1528078748355" duration="7441000" />
+      <workItem from="1528078748355" duration="21867000" />
     </task>
     <task id="LOCAL-00001" summary="用户授权检测Bug修复">
       <created>1527751630922</created>
@@ -443,7 +438,35 @@
       <option name="project" value="LOCAL" />
       <updated>1527833550799</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="为Pop 网络库添加拦截器和基类Client">
+      <created>1528090989739</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1528090989739</updated>
+    </task>
+    <task id="LOCAL-00011" summary="完善POP网络库Demo">
+      <created>1528091033571</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1528091033571</updated>
+    </task>
+    <task id="LOCAL-00012" summary="一些配置改动">
+      <created>1528091049887</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1528091049887</updated>
+    </task>
+    <task id="LOCAL-00013" summary="为姜傻逼添加一下注释">
+      <created>1528108717399</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1528108717399</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -470,28 +493,37 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34475000" />
+    <option name="totallyTimeSpent" value="48901000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.22708334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.23216188" />
       <window_info id="Structure" order="1" sideWeight="0.50246304" side_tool="true" weight="0.19375" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32906404" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32906404" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897383" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32897383" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.19441572" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32906404" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23054187" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897383" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2303823" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32906404" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32897383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -516,133 +548,159 @@
     <MESSAGE value="POP方式实现网络库" />
     <MESSAGE value="抽出POP 网络库为YZKNetwork" />
     <MESSAGE value="Request添加Post支持" />
-    <option name="LAST_COMMIT_MESSAGE" value="Request添加Post支持" />
+    <MESSAGE value="为Pop 网络库添加拦截器和基类Client" />
+    <MESSAGE value="完善POP网络库Demo" />
+    <MESSAGE value="一些配置改动" />
+    <MESSAGE value="为姜傻逼添加一下注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="为姜傻逼添加一下注释" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Crocodile/App/Controller/MainContainerViewController.m</url>
-          <line>35</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/Crocodile/App/ViewModel/LoginViewModel.m</url>
+          <line>5</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Crocodile/App/Controller/MainContainerViewController.m</url>
-          <line>31</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/Crocodile/App/ViewModel/LoginViewModel.m</url>
+          <line>45</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="57" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Service/AccountValidatorType.h">
+    <entry file="file://$PROJECT_DIR$/Crocodile/App/ViewModel/MainContainerViewModel.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="104">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CrocodileTests/App/ViewModel/LoginViewModelTests.m">
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/AppEnvironment.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-        </state>
+        <state relative-caret-position="-416" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pods/Kiwi/Classes/Core/KiwiMacros.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="923">
-          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CrocodileTests/LIbrary/AppEnvironmentTests.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="37" column="65" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/objc/objc.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="138" column="45" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLRequest.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="328" column="11" selection-start-line="328" selection-start-column="11" selection-end-line="328" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CrocodileTests/App/Controller/LoginViewControllerTests.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/DefaultClient.h" />
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/DefaultClient.m" />
-    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFNetworking.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YZKNetWork/YZKNetWork.h" />
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDictionary.h">
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/AppEnvironment.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <caret line="127" column="49" selection-start-line="127" selection-start-column="49" selection-end-line="127" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACSubscriber.m">
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/LiveStream/AliPusher/AliPusher.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="299">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACPassthroughSubscriber.m">
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/LiveStream/AliPusher/AliPusher.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="117">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/ApiClientType.h">
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Intent.m">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Category/UIViewController+Intent.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/Decodable.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Net/ApiClient.h">
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Intent.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="169">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Category/UIViewController+Intent.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="e#100#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/LiveStream/AliPusher/KoalaBeauty.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/NSMutableURLRequest+Request.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="e#100#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACSubscriptionScheduler.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACDynamicSignal.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/App/Model/User.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="30" />
           <folding>
             <element signature="e#92#125#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.m">
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1664">
-          <caret line="128" column="26" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
+        <state relative-caret-position="117">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Net/ApiClient.m">
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-          <folding>
-            <element signature="e#92#130#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="208">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/App/Controller/MainContainerViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -650,6 +708,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/App/Controller/MainContainerViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#100#145#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -663,158 +731,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSError.h">
+    <entry file="file://$PROJECT_DIR$/Crocodile/App/Model/User.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Controller/MainContainerViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/ViewModel/MainContainerViewModel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/NSMutableURLRequest+Request.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="38" column="92" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
+        <state relative-caret-position="330">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
-            <element signature="e#100#139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/ClientConfigType.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/Decodable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/DataStatus.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACSignal.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACSignal.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Controller/MainContainerViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          <folding>
-            <element signature="e#100#145#0" expanded="true" />
+            <element signature="e#92#129#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Crocodile/App/ViewModel/MainContainerViewModel.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Model/ServerError.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Model/ServerError.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="395">
+          <caret line="39" column="42" lean-forward="true" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
           <folding>
-            <element signature="e#100#129#0" expanded="true" />
+            <element signature="e#100#134#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/BaseClient.h">
+    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/UIButton+RACCommandSupport.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="43" />
+        <state relative-caret-position="404">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACCommand.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACScheduler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/App/ViewModel/LoginViewModel.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="43" column="94" selection-start-line="43" selection-start-column="94" selection-end-line="43" selection-end-column="94" />
+          <folding>
+            <element signature="e#92#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACSignal.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACSignal.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="372" column="12" selection-start-line="372" selection-start-column="8" selection-end-line="372" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="349" column="31" lean-forward="true" selection-start-line="349" selection-start-column="31" selection-end-line="349" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/ReactiveObjC/ReactiveObjC/RACStream.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="354" column="25" selection-start-line="354" selection-start-column="25" selection-end-line="354" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
             <element signature="e#100#133#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURL.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="509" column="99" selection-start-line="509" selection-start-column="99" selection-end-line="509" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/NSMutableURLRequest+Request.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/Client.h">
+    <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UsersRequest.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#100#133#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/BaseClient.m">
+    <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UsersRequest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Category/NSData+Object.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="195">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -828,81 +854,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UsersRequest.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="e#100#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UserDetailRequest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="38" />
+        <state relative-caret-position="382">
+          <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
           <folding>
             <element signature="e#100#137#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/Request.h">
+    <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UsersRequest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Model/User.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="572">
+          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
           <folding>
-            <element signature="e#92#125#0" expanded="true" />
+            <element signature="e#100#134#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Model/User.m">
+    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        <state relative-caret-position="-271" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/DataStatus.h">
+    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="-254">
+          <caret line="84" column="3" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.h">
+    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="222">
+          <caret line="95" column="44" lean-forward="true" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="214" column="37" selection-start-line="214" selection-start-column="37" selection-end-line="214" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3601">
+          <caret line="290" column="25" selection-start-line="290" selection-start-column="25" selection-end-line="290" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="272" column="42" lean-forward="true" selection-start-line="272" selection-start-column="42" selection-end-line="272" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="128" column="64" lean-forward="true" selection-start-line="128" selection-start-column="64" selection-end-line="128" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/ISAClient.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/ISAClient.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding>
             <element signature="e#100#133#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crocodile/App/Client/User/UserClient.m">
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/Client.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="e#100#134#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crocodile/Library/Client/Request.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
         </state>
       </provider>
     </entry>

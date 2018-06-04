@@ -9,6 +9,6 @@
 
 @interface UserDetailRequest: NSObject<Request>
 
-- (instancetype)initWithUID:(int)uid;
+- (instancetype)initWithUID:(NSInteger)uid;
 
 @end

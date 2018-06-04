@@ -27,10 +27,10 @@
     }];
 
     _user = [_viewWillAppearSubject flattenMap:^RACSignal *(id value) {
-        return [[UserClient new] userById:1];
+        return [[[UserClient alloc] init] userById:1];
     }];
 
-    [[[UserClient new] users:1] subscribeNext:^(DataStatus<NSArray<User *> *> *x) {
+    [[[[UserClient alloc] init] users:1] subscribeNext:^(DataStatus<NSArray<User *> *> *x) {
         x.data.firstObject;
     }];
 

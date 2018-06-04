@@ -6,14 +6,10 @@
 #import <ReactiveObjC/RACSignal.h>
 #import <ReactiveObjC/RACDisposable.h>
 #import <ReactiveObjC/RACSubscriber.h>
-#import <Foundation/Foundation.h>
 #import "UserClient.h"
 #import "User.h"
 #import "Request.h"
-#import "Decodable.h"
-#import "DataStatus.h"
 #import "UserDetailRequest.h"
-#import "NSMutableURLRequest+Request.h"
 #import "NSData+Object.h"
 #import "UsersRequest.h"
 #define USER_HOST  @"https://api.github.com/"
@@ -22,13 +18,19 @@
 
 }
 
+- (instancetype)init {
+    self = [super initWithBaseURLString:USER_HOST];
+    return self;
+}
 
 - (nonnull RACSignal <User *> *)userById:(NSInteger)uid {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         NSURLSessionDataTask *task =
             [self send:[[UserDetailRequest alloc] initWithUID:uid] completion:^(NSData *data, NSError *error) {
-                [subscriber sendNext:[[User alloc] initWithDictionary:data.dictionary]];
+                [subscriber sendNext:[[User alloc] initWithDictionary:data.object]];
+                [subscriber sendCompleted];
             }];
+
         return [RACDisposable disposableWithBlock:^{
             [task cancel];
         }];

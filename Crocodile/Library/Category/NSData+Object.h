@@ -6,5 +6,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSData (Object)
-- (id)dictionary;
+- (id)object;
 @end
