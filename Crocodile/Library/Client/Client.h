@@ -6,5 +6,5 @@
 #import <Foundation/Foundation.h>
 @protocol Request;
 @protocol Client<NSObject>
-- (NSURLSessionDataTask *)send:(id<Request>)request completion:(void (^)(id))completion;
+- (NSURLSessionDataTask *)send:(id<Request>)request completion:(void (^)(NSData *, NSError *))completion;
 @end
