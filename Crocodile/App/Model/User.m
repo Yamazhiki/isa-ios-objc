@@ -33,4 +33,8 @@
     return [[User alloc] initWithDictionary:obj];
 }
 
+- (NSArray <User *> *)fromData:(NSData *)data {
+    return nil;
+}
+
 @end

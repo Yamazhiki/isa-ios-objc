@@ -11,39 +11,34 @@
 #import "User.h"
 #import "Request.h"
 #import "Decodable.h"
+#import "DataStatus.h"
 #import "UserDetailRequest.h"
 #import "NSMutableURLRequest+Request.h"
+#import "NSData+Object.h"
+#import "UsersRequest.h"
 #define USER_HOST  @"https://api.github.com/"
 
 @implementation UserClient {
 
 }
 
-- (NSURLSessionDataTask *)send:(id<Request>)request completion:(void (^)(id))completion {
-    NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc]
-        initWithRequest:request baseURLString:USER_HOST];
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *rlt = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData *data,
-                                                                                            NSURLResponse *response,
-                                                                                            NSError *error) {
-        if (error) {
-            completion(nil);
-        }
-        if ([request.cls conformsToProtocol:@protocol(Decodable)]) {
-            id<Decodable> entity = (id<Decodable>) [[request.cls alloc] init];
-            completion([entity decode:data]);
-        } else {
 
-        }
-    }];
-    [rlt resume];
-    return rlt;
-}
-
-- (RACSignal *)userById:(NSInteger)uid {
+- (nonnull RACSignal <User *> *)userById:(NSInteger)uid {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        NSURLSessionDataTask *task = [self send:[[UserDetailRequest alloc] initWithUID:uid] completion:^(User *user) {
-            [subscriber sendNext:user];
+        NSURLSessionDataTask *task =
+            [self send:[[UserDetailRequest alloc] initWithUID:uid] completion:^(NSData *data, NSError *error) {
+                [subscriber sendNext:[[User alloc] initWithDictionary:data.dictionary]];
+            }];
+        return [RACDisposable disposableWithBlock:^{
+            [task cancel];
+        }];
+    }];
+}
+- (nonnull RACSignal <DataStatus<NSArray<User *> *> *> *)users:(NSInteger)page {
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        NSURLSessionDataTask *task = [self send:[UsersRequest new] completion:^(NSData *data, NSError *error) {
+            id users = [User fromData:data];
+            [subscriber sendNext:[[DataStatus alloc] initWithData:users error:error]];
             [subscriber sendCompleted];
         }];
         return [RACDisposable disposableWithBlock:^{

@@ -8,6 +8,9 @@
 
 @interface MainContainerViewModel: NSObject
 
+@property(readonly) RACSignal *user;
 @property(readonly) RACSignal *sessionUpdate;
+
+- (void)viewWillAppear;
 
 @end

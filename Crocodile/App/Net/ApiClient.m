@@ -29,6 +29,7 @@
 - (RACSignal *)GET:(NSString *)url parameters:(id)parameters {
 
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+
         NSURLSessionDataTask *task =
             [_manager GET:url parameters:parameters progress:nil success:^(NSURLSessionDataTask *task,
                                                                            id responseObject) {

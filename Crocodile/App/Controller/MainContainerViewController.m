@@ -15,19 +15,25 @@
     __weak IBOutlet UILabel *statusOutlet;
     __weak IBOutlet UIButton *logoutOutlet;
     __weak IBOutlet UIButton *switchOutlet;
+    MainContainerViewModel *viewModel;
+
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MainContainerViewModel *viewModel = [[MainContainerViewModel alloc] init];
+    viewModel = [[MainContainerViewModel alloc] init];
 
     [[[AppEnvironment shared] sessionUpdate] subscribeNext:^(id x) {
         NSLog(@"%@", x);
     }];
 
-    UserClient *client = [[UserClient alloc] init];
-    [[client userById:1] subscribeNext:^(id x) {
+
+    [viewModel.user subscribeNext:^(id x) {
         NSLog(@"%@", x);
+    }];
+
+    [viewModel.user subscribeError:^(NSError *error) {
+        NSLog(@"%@", error);
     }];
 
     [viewModel.sessionUpdate subscribeNext:^(id x) {
@@ -39,6 +45,7 @@
         }
     }];
 
+
     [[switchOutlet rac_signalForControlEvents:UIControlEventTouchUpInside]
         subscribeNext:^(__kindof UIControl *x) {
             [[AppEnvironment shared] switchMode:AppModeSimulate];
@@ -47,6 +54,11 @@
     [[logoutOutlet rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl *x) {
         [[AppEnvironment shared] updateUser:nil];
     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [viewModel viewWillAppear];
 }
 
 @end

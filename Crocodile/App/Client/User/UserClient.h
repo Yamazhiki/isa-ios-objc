@@ -5,9 +5,13 @@
 
 #import <Foundation/Foundation.h>
 #import "Client.h"
+#import "DataStatus.h"
+#import "BaseClient.h"
 @class RACSignal;
+@class DataStatus;
+@class User;
 
-@interface UserClient: NSObject<Client>
+@interface UserClient: BaseClient
 
 
 /**
@@ -15,6 +19,7 @@
  * @param uid 用户ID
  * @return RACSignal<User*>
  */
-- (RACSignal *)userById:(NSInteger)uid;
+- (nonnull RACSignal *)userById:(NSInteger)uid;
+- (nonnull RACSignal <DataStatus<NSArray<User *> *> *> *)users:(NSInteger)page;
 
 @end

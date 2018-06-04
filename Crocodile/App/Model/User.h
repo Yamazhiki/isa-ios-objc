@@ -14,4 +14,6 @@
 - (instancetype)initWithUID:(NSInteger)uid name:(NSString *)name;
 - (instancetype)initWithDictionary:(NSDictionary *)src;
 
++ (NSArray <User *> *)fromData:(NSData *)data;
+
 @end
