@@ -4,14 +4,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Client.h"
 #import "DataStatus.h"
-#import "ISAClient.h"
+#import "ISAClientManager.h"
 @class RACSignal;
 @class DataStatus;
 @class User;
 
-@interface UserClient: ISAClient
+@interface UserClient: ISAClientManager
 
 
 /**

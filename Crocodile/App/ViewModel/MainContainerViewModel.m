@@ -30,10 +30,6 @@
         return [[[UserClient alloc] init] userById:1];
     }];
 
-    [[[[UserClient alloc] init] users:1] subscribeNext:^(DataStatus<NSArray<User *> *> *x) {
-        x.data.firstObject;
-    }];
-
     return self;
 }
 - (void)viewWillAppear {

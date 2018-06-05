@@ -8,6 +8,7 @@
 #import "MainContainerViewController.h"
 #import "MainContainerViewModel.h"
 #import "AppEnvironment.h"
+#import "UserClient.h"
 
 @implementation MainContainerViewController {
 
@@ -42,6 +43,11 @@
         } else {
             self->statusOutlet.text = @"没有登录";
         }
+    }];
+
+    UserClient *client = [[UserClient alloc] init];
+    [[client userById:10] subscribeNext:^(id x) {
+        NSLog(@"%@", x);
     }];
 
 

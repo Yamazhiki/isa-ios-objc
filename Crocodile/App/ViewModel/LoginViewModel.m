@@ -10,7 +10,6 @@
 #import <ReactiveObjC/RACSignal.h>
 #import <ReactiveObjC/RACSignal+Operations.h>
 #import <ReactiveObjC/RACSubject.h>
-#import <ReactiveObjC/RACScheduler.h>
 #import "LoginViewModel.h"
 #import "ApiClient.h"
 #import "AccountValidatorType.h"
@@ -40,11 +39,6 @@
         return @([running intValue] + [next intValue]);
     }];
 
-
-    [[signal deliverOn:[RACScheduler schedulerWithPriority:RACSchedulerPriorityBackground]] take:1]
-        subscribeNext:^(id x) {
-            NSLog(@"-----%@", x);
-        }];
     return self;
 }
 

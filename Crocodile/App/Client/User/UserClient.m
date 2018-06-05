@@ -8,10 +8,8 @@
 #import <ReactiveObjC/RACSubscriber.h>
 #import "UserClient.h"
 #import "User.h"
-#import "Request.h"
-#import "UserDetailRequest.h"
 #import "NSData+Object.h"
-#import "UsersRequest.h"
+#import "UserRequests.h"
 #define USER_HOST  @"https://api.github.com/"
 
 @implementation UserClient {
