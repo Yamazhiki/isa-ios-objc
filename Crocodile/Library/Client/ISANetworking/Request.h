@@ -27,4 +27,5 @@ typedef NS_ENUM(NSInteger) {
  * 参数
  */
 @property(readonly) NSDictionary<NSString *, NSString *> *parameters;
+
 @end
