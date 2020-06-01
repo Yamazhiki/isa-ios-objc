@@ -22,6 +22,7 @@
     NSLog(@"123");
     NSLog(@"321");
     NSLog(@"456");
+    NSLog(@"321123");
     return YES;
 }
 
